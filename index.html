@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+
+<body>
+  <div class="main">
+    <div class="left-side">
+      <div class="left-side-body">
+        <div class="left-side-image"></div>
+        <div class="left-side-contents">
+          <div class="card-front">
+            <div class="card-front-body">
+              <div class="card-front-logo">
+                <img src="./assets/images/card-logo.svg" alt="">
+              </div>
+              <div class="card-front-credential">
+                <div class="card-number" id="card-number"></div>
+                <div class="card-content">
+                  <div class="card-holder-name"  id="card-holder-name"></div>
+                  <div class="card-exp-date">
+                    <span class="exp-month" id="exp-month"></span>
+                    <span class="separator">/</span>
+                    <span class="exp-year" id="exp-year"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-back">
+            <div class="card-back-body">
+              <div class="cvc-number" id="cvc-number"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right-side">
+      <div class="right-side-body">
+        <div id="card-input-details">
+          <form action="" id="form">
+          <div class="form-group">
+            <label for="">CARDHOLDER NAME</label>
+            <input type="text" placeholder="e.g. Jane Appleseed" id="card-holder-input" name="cardHolderName" maxlength="80" >
+            <div class="error-message" id="holdername-error"></div>
+          </div>
+          <div class="form-group">
+            <label for="">CARD NUMBER</label>
+            <input type="text" placeholder="e.g. 1234 5678 9123 0000" id="card-number-input" name="cardNumber" maxlength="19" inputmode="numeric" onkeypress="return event.key.charCodeAt(0)>=48 && event.key.charCodeAt(0)<=57" >
+            <div class="error-message" id="cardnumber-error"></div>
+          </div>
+          <div class="form-inline-group">
+            <div class="inline-group">
+              <label for="">EXP. DATE (MM/YY)</label>
+              <input type="text" class="exp-date" placeholder="MM" id="exp-month-input" name="expMonth" maxlength="2" inputmode="numeric" onkeypress="return event.key.charCodeAt(0)>=48 && event.key.charCodeAt(0)<=57" >
+              <input type="text" class="exp-date" placeholder="YY" id="exp-year-input" name="expYear" maxlength="2" inputmode="numeric" onkeypress="return event.key.charCodeAt(0)>=48 && event.key.charCodeAt(0)<=57" >
+              <div class="error-message" id="exp-date-error"></div>
+            </div>
+            <div class="inline-group">
+              <label for="">CVC</label>
+              <input type="text" placeholder="e.g. 123" id="cvc-input" name="cvcNumber" maxlength="3" inputmode="numeric" onkeypress="return event.key.charCodeAt(0)>=48 && event.key.charCodeAt(0)<=57">
+              <div class="error-message" id="cvc-error">Can't be blank</div>
+            </div>
+          </div>
+          <button class="btn">Confirm</button>
+        </form>
+        </div>
+
+        <div class="complete-thankyou" id="complete-thankyou">
+          <div class="complete-image">
+            <img src="./assets/images/icon-complete.svg" alt="">
+          </div>
+          <div class="complete-content">
+            <h2>THANK YOU !</h2>
+            <P>We've added your card details</P>
+          </div>
+          <button class="btn" id="continue-btn">Continue</button>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
