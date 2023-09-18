@@ -23,9 +23,6 @@ body {
 .main {
     width: 100%;
     height: 100%;
-    /* background-color: aqua; */
-    /* font-family: 'Bai Jamjuree', sans-serif; */
-
 }
 
 .valid{
@@ -421,7 +418,7 @@ body {
         padding: 18px;
     }
     .cvc-number {
-        padding: 1.4rem 0 1.4rem 23rem;
+        padding: 5.7rem 0 5.7rem 20rem;
         font-size: 20px;
     }
     .right-side-body {
@@ -472,48 +469,48 @@ body {
 }
 @media screen and (min-width:992px) {
     .left-side-image {
-        height: 400px;
+        height: 420px;
     }
     .card-front {
-        width: 560px;
-        height: 350px;
-        top: 125px;
+        width: 520px;
+        height: 280px;
+        top: 195px;
         left: 17%;
     }
     .card-front-body {
-        height: 350px;
-        padding: 45px;
+        height: 280px;
+        padding: 20px;
     }
     .card-front-logo img {
         width: 150px;
-        height: 90px;
+        height: 70px;
         object-fit: contain;
     }
 
     .card-number {
-        font-size: 32px;
+        font-size: 28px;
         padding-bottom: 15px;
         font-weight: 500;
     }
 
     .card-content {
-        font-size: 22px;
-        padding: 12px 12px 12px 12px;
+        font-size: 18px;
+        padding: 12px 18px 12px 17px;
     }
     .card-back {
-        width: 560px;
-        height: 350px;
-        top: 27px;
+        width: 520px;
+        height: 280px;
+        top: 34px;
         right: 17%;
     }
 
     .card-back-body {
-        height: 350px;
+        height: 280px;
         padding: 45px;
     }
     .cvc-number {
-        padding: 1.4rem 0 1.4rem 24rem;
-        font-size: 28px;
+        padding: 5rem 0 5rem 22rem;
+        font-size: 18px;
     }
     .right-side-body {
         padding: 20% 17%;
