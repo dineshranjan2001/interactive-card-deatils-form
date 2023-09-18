@@ -189,13 +189,19 @@ form.addEventListener('submit', (event) => {
 
 });
 
-document.getElementById('continue-btn').addEventListener('click',()=>{
+document.getElementById('continue-btn').addEventListener('click', () => {
     document.getElementById('card-input-details').style.display = 'block';
     document.getElementById('complete-thankyou').style.display = 'none';
 
-    cardHolderNameInput.value="";
-    cardNumberInput.value="";
-    expMonthInput.value="";
-    expYearInput.value="";
-    cvcNumberInput.value="";
+    cardHolderNameInput.value = "";
+    cardNumberInput.value = "";
+    expMonthInput.value = "";
+    expYearInput.value = "";
+    cvcNumberInput.value = "";
+
+    cardNumberText.innerText = "0000 0000 0000 0000";
+    cardHolderNameText.innerText = "JANE APPLESEED";
+    expMonthText.innerText = "00"
+    expYearText.innerText = "00"
+    cvcNumberText.innerText = "000"
 });
